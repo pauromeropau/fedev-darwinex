@@ -17,12 +17,14 @@ No hay limitaciones en el desarrollo del ejercicio. Una vez terminado, enviar un
 - Considerar también los estados de hover y active de los elementos interactivos (botones, enlaces…).
 <br>
 <br>
-![hover](/01-test.png)
+
+![hover](01-test.png)
 
 - Utilizar el set de iconos (SVG) proporcionados.
 <br>
 <br>
-![hover](/02-test.png)
+
+![hover](02-test.png)
 
 - La maqueta ha de ser responsive. Dispositivos: Tablet, Desktop, Desktop HD.
 
@@ -36,10 +38,12 @@ No hay limitaciones en el desarrollo del ejercicio. Una vez terminado, enviar un
 - Activas el carrusel de las cards.
 <br>
 <br>
-![hover](/03-test.png)
+
+![hover](03-test.png)
 
 - Posibilidad de cambiar, a través de la barra de opciones, la vista de las cards de grid a lista. La lista se representará a tu gusto.
 <br>
 <br>
-![hover](/04-test.png)
+
+![hover](04-test.png)
 
