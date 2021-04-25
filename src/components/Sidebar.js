@@ -3,8 +3,9 @@ import SimpleBar from 'simplebar-react';
 import { useLocation } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Button, Dropdown, ButtonGroup, Nav, Badge, Image, Navbar } from '@themesberg/react-bootstrap';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
-import { Nav, Badge, Image, Button, Navbar } from '@themesberg/react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Routes } from '../routes';
 
@@ -82,22 +83,45 @@ const Sidebar = (props = {}) => {
 							</div>
 						</div>
 						<Nav className="flex-column pt-3 pt-md-0">
-							<a
-								class="d-flex justify-content-center card-link"
-								href="/"
-							>
-								<img
-									src={Logo}
-									height="35"
-									alt="Darwinex Logo"
-									class="d-block mx-auto mb-5 mt-2"
-								/>
+							<a class="d-flex justify-content-center card-link" href="/">
+								<img src={Logo} height="35" alt="Darwinex Logo" class="d-block mx-auto mb-5 mt-2" />
 							</a>
-
 							<h6 className="text-white">PRINCIPAL</h6>
 							<NavItem title="Explorar" link={Routes.DashboardOverview.path} image={Explorar} />
 							<NavItem title="All Darwins" link={Routes.AllDarwins.path} image={AllDarwins} />
 							<NavItem title="Darwinia" link={Routes.Darwinia.path} image={Darwinia} />
+							<Dropdown drop={faAngleDown} as={ButtonGroup} className=" mt-10 mb-2">
+								<Button variant="secondary">ARE YOU A TRADER?</Button>
+								<Dropdown.Toggle split variant="secondary">
+									<FontAwesomeIcon icon={faAngleDown} className="dropdown-arrow" />
+								</Dropdown.Toggle>
+								<Dropdown.Menu className="bg-white">
+									<Dropdown.Item href="/" className="fw-bolder text-primary">
+									<Image src={Darwinia} className="me-2" />
+										Darwinia
+									</Dropdown.Item>
+									<Dropdown.Item href="/" className="fw-bolder text-primary">
+									<Image src={Darwinia} className="me-2" />
+										Hall of Fame
+									</Dropdown.Item>
+									<Dropdown.Item href="/" className="fw-bolder text-primary">
+									<Image src={Darwinia} className="me-2" />
+										Performance Fees
+									</Dropdown.Item>
+									<Dropdown.Item href="/" className="fw-bolder text-primary">
+									<Image src={Darwinia} className="me-2" />
+										Rebates
+									</Dropdown.Item>
+									<Dropdown.Item href="/" className="fw-bolder text-primary">
+									<Image src={Darwinia} className="me-2" />
+										Widgets
+									</Dropdown.Item>
+									<Dropdown.Divider />
+									<Dropdown.Item href="/" className=" text-primary mt-2">
+										CREATE ACCOUNT
+									</Dropdown.Item>
+								</Dropdown.Menu>
+							</Dropdown>
 						</Nav>
 					</div>
 				</SimpleBar>

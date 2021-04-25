@@ -1,8 +1,6 @@
 import React from 'react';
 import { Col, Row } from '@themesberg/react-bootstrap';
-
-import { BarChartWidget, SalesValueWidget, SalesValueWidgetPhone } from '../../components/Widgets';
-import { totalOrders } from '../../data/charts';
+import { SalesValueWidget, SalesValueWidgetPhone } from '../../components/Widgets';
 
 const DashboardOverview = () => {
 	return (
@@ -18,34 +16,47 @@ const DashboardOverview = () => {
 				</ButtonGroup>
 			</div> */}
 
-			<Row className="justify-content-md-center">
+			{/* <Row className="justify-content-md-center">
 				<Col xs={12} className="mb-4 d-none d-sm-block">
 					<SalesValueWidget title="Sales Value" value="10,567" percentage={10.57} />
 				</Col>
 				<Col xs={12} className="mb-4 d-sm-none">
-					<SalesValueWidgetPhone title="Sales Value" value="10,567" percentage={10.57} />
+					<SalesValueWidget title="Sales Value" value="10,567" percentage={10.57} />
 				</Col>
-			</Row>
+			</Row> */}
 
 			<Row>
-				<Col xs={12} xl={12} className="mb-4">
+				<Col xl={12} className="mb-4 mt-5">
+					<h6 className="fw-bold text-white mb-5">729 Darwins encontrados</h6>
 					<Row>
-						<Col xs={12} xl={4}>
-							<Col xs={12} className="mb-4">
-								<BarChartWidget title="Total orders" value={452} percentage={18.2} data={totalOrders} />
+						<Col xl={4}>
+							<Col className="mb-4">
+								<SalesValueWidget title="BWE" />
 							</Col>
 						</Col>
-            <Col xs={12} xl={4}>
-							<Col xs={12} className="mb-4">
-								<BarChartWidget title="Total orders" value={452} percentage={18.2} data={totalOrders} />
+						<Col  xl={4}>
+							<Col className="mb-4">
+								<SalesValueWidget title="NTI" />
 							</Col>
 						</Col>
-            <Col xs={12} xl={4}>
-							<Col xs={12} className="mb-4">
-								<BarChartWidget title="Total orders" value={452} percentage={18.2} data={totalOrders} />
+						<Col xl={4}>
+							<Col className="mb-4">
+								<SalesValueWidget title="BWE" />
 							</Col>
 						</Col>
 					</Row>
+				</Col>
+				<Col xs={12} className="mb-4 d-none d-xs-block">
+					<Col xs={9} className="mb-4">
+						<h6 className="fw-bold text-white mb-5">729 Darwins encontrados</h6>
+						<SalesValueWidgetPhone title="BWE" />
+					</Col>
+					<Col xs={9} className="mb-4 d-sm-none d-md-none">
+						<SalesValueWidgetPhone title="NTI" />
+					</Col>
+					<Col xs={9} className="mb-4 d-sm-none d-md-none">
+						<SalesValueWidgetPhone title="BWE" />
+					</Col>
 				</Col>
 			</Row>
 		</>

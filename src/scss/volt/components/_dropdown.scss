@@ -33,7 +33,7 @@
     &.dropdown-menu-xs {
         min-width: 120px;
         max-width: 120px;
-        border: $border-width solid $light;
+        border: none;
         @include box-shadow($box-shadow-sm);
     }
 

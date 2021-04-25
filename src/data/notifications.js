@@ -1,15 +1,27 @@
-
-import Profile from "../assets/img/team/profile-picture.jpeg"
-
 const notifications = [
     {
         "id": 1,
         "read": false,
-        "image": Profile,
-        "sender": "Paula Romero",
+        "title": "LPO",
         "time": "a few moments ago",
         "link": "#",
-        "message": `Added you to an event "Project stand-up" tomorrow at 12:30 AM.`
+        "number": `98.9`
+    },
+        {
+        "id": 2,
+        "read": false,
+        "title": "ERQ",
+        "time": "a few moments ago",
+        "link": "#",
+        "number": `98.9`
+    },
+        {
+        "id": 3,
+        "read": false,
+        "title": "IPH",
+        "time": "a few moments ago",
+        "link": "#",
+        "number": `98.9`
     },
 ]
 

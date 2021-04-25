@@ -12,21 +12,21 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Preloader from "../components/Preloader";
-import Accordion from "./components/Accordion";
-import Alerts from "./components/Alerts";
-import Badges from "./components/Badges";
-import Breadcrumbs from "./components/Breadcrumbs";
-import Buttons from "./components/Buttons";
-import Forms from "./components/Forms";
-import Modals from "./components/Modals";
-import Navs from "./components/Navs";
-import Navbars from "./components/Navbars";
-import Pagination from "./components/Pagination";
-import Popovers from "./components/Popovers";
-import Progress from "./components/Progress";
-import Tabs from "./components/Tabs";
-import Tooltips from "./components/Tooltips";
-import Toasts from "./components/Toasts";
+// import Accordion from "./components/Accordion";
+// import Alerts from "./components/Alerts";
+// import Badges from "./components/Badges";
+// import Breadcrumbs from "./components/Breadcrumbs";
+// import Buttons from "./components/Buttons";
+// import Forms from "./components/Forms";
+// import Modals from "./components/Modals";
+// import Navs from "./components/Navs";
+// import Navbars from "./components/Navbars";
+// import Pagination from "./components/Pagination";
+// import Popovers from "./components/Popovers";
+// import Progress from "./components/Progress";
+// import Tabs from "./components/Tabs";
+// import Tooltips from "./components/Tooltips";
+// import Toasts from "./components/Toasts";
 
 const RouteWithSidebar = ({ component: Component, ...rest }) => {
   const [loaded, setLoaded] = useState(false);
@@ -73,7 +73,7 @@ const HomePage = () => (
     <RouteWithSidebar exact path={Routes.AllDarwins.path} component={AllDarwins} />
 
     {/* components */}
-    <RouteWithSidebar exact path={Routes.Accordions.path} component={Accordion} />
+    {/* <RouteWithSidebar exact path={Routes.Accordions.path} component={Accordion} />
     <RouteWithSidebar exact path={Routes.Alerts.path} component={Alerts} />
     <RouteWithSidebar exact path={Routes.Badges.path} component={Badges} />
     <RouteWithSidebar exact path={Routes.Breadcrumbs.path} component={Breadcrumbs} />
@@ -81,13 +81,13 @@ const HomePage = () => (
     <RouteWithSidebar exact path={Routes.Forms.path} component={Forms} />
     <RouteWithSidebar exact path={Routes.Modals.path} component={Modals} />
     <RouteWithSidebar exact path={Routes.Navs.path} component={Navs} />
-    <RouteWithSidebar exact path={Routes.Navbars.path} component={Navbars} />
-    <RouteWithSidebar exact path={Routes.Pagination.path} component={Pagination} />
-    <RouteWithSidebar exact path={Routes.Popovers.path} component={Popovers} />
+    <RouteWithSidebar exact path={Routes.Navbars.path} component={Navbars} /> */}
+    {/* <RouteWithSidebar exact path={Routes.Pagination.path} component={Pagination} /> */}
+    {/* <RouteWithSidebar exact path={Routes.Popovers.path} component={Popovers} />
     <RouteWithSidebar exact path={Routes.Progress.path} component={Progress} />
     <RouteWithSidebar exact path={Routes.Tabs.path} component={Tabs} />
     <RouteWithSidebar exact path={Routes.Tooltips.path} component={Tooltips} />
-    <RouteWithSidebar exact path={Routes.Toasts.path} component={Toasts} />
+    <RouteWithSidebar exact path={Routes.Toasts.path} component={Toasts} /> */}
 
   </Switch>
 );

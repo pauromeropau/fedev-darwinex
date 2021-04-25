@@ -13,9 +13,9 @@ Here is the
 
 ### TECH STACK
 - React
-- SASS
+- SCSS
 - Bootstrap
-- Git
+- Git/Github/Netlify
 
 ### HOW TO RUN
 
