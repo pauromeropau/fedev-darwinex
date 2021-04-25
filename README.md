@@ -6,10 +6,16 @@ Here is the
 
 ### Q&A
 1. Cuánto tiempo has empleado para el desarrollo del ejercicio (_How much time have you spend for the development of the test_)
+Free time on my weekend (maybe about 4 four in total)
 
 2. Cuál ha sido la parte más dificultosa de lograr (_What has been the most difficult part to achieve_)
+Probably the most difficult part has been the small details.
 
 3. Comentarios o consideraciones que deseas hacernos saber (_Comments or considerations that you want to let us know_)
+This project has been developed with modern technologies and following the Principles of Software Engineering (KISS, DRY & SOLID):
+- KISS - "_Keep it simple, Stupid!_"
+- DRY - "_Don't Repeat Yourself_"
+- SOLID - Easy to maintain and extend over time.
 
 ### TECH STACK
 - React

@@ -12,21 +12,6 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Preloader from "../components/Preloader";
-// import Accordion from "./components/Accordion";
-// import Alerts from "./components/Alerts";
-// import Badges from "./components/Badges";
-// import Breadcrumbs from "./components/Breadcrumbs";
-// import Buttons from "./components/Buttons";
-// import Forms from "./components/Forms";
-// import Modals from "./components/Modals";
-// import Navs from "./components/Navs";
-// import Navbars from "./components/Navbars";
-// import Pagination from "./components/Pagination";
-// import Popovers from "./components/Popovers";
-// import Progress from "./components/Progress";
-// import Tabs from "./components/Tabs";
-// import Tooltips from "./components/Tooltips";
-// import Toasts from "./components/Toasts";
 
 const RouteWithSidebar = ({ component: Component, ...rest }) => {
   const [loaded, setLoaded] = useState(false);
